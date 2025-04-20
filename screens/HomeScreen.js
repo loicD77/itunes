@@ -42,7 +42,7 @@ export default function HomeScreen({ navigation }) {
      //Selon https://www.w3schools.com/react/react_forms.asp cette prop transmet la valeur actuelle de la recherche à la barre de recherche. En React, cela fait de l’input un composant contrôlé, où la valeur affichée est toujours synchronisée avec l’état local (useState). Cela garantit que l’interface utilisateur reflète toujours l’état de l’application.
         term={term}
 
-     //Selon https://chatgpt.com/g/g-p-6782be9e5094819198d2a56361f50e9a-react-et-expo/c/680214ba-3870-800b-9107-eee449bd2623 cette prop fournit une fonction pour mettre à jour l’état term à chaque modification de l’entrée utilisateur. En React, l’événement onChange est utilisé pour capturer les modifications des champs de formulaire et mettre à jour l’état en conséquence
+     //Selon https://www.w3schools.com/react/react_forms.asp cette prop fournit une fonction pour mettre à jour l’état term à chaque modification de l’entrée utilisateur. En React, l’événement onChange est utilisé pour capturer les modifications des champs de formulaire et mettre à jour l’état en conséquence
         onChangeTerm={setTerm}
 
     // Selon https://www.geeksforgeeks.org/react-onsubmit-event/ cette prop transmet une fonction qui sera appelée lors de la soumission de la recherche (par exemple, lorsqu’on appuie sur "Entrée"). La fonction handleSearch peut effectuer des actions telles que la validation de l’entrée ou la navigation vers une autre page. En React, l’événement onSubmit est couramment utilisé pour gérer la soumission des formulaires.
@@ -142,4 +142,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
 
