@@ -49,7 +49,7 @@ export default function UserPlaylistDetailScreen({ route }) {
       <FlatList
         data={playlist.tracks}
         keyExtractor={(item) => item.trackId.toString()} // Clé unique obligatoire
-        renderItem={({ item }) => (
+        renderItem={({ item }) => ( // Déstructuration d’un objet passé en paramètre de la fonction.
           <TouchableOpacity
             style={styles.trackItem}
             onPress={() => handlePlayTrack(item)} // Lecture du morceau cliqué
@@ -115,3 +115,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
