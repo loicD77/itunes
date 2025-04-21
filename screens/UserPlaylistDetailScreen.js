@@ -1,6 +1,8 @@
 // Import de React et du contexte Audio
 import React, { useContext } from 'react';
-import {
+
+//On importe les composants View, Text, FlatList, StyleSheet et TouchableOpacity de la librairie 'react-native'
+import {    
   View,
   Text,
   FlatList,
@@ -25,7 +27,7 @@ export default function UserPlaylistDetailScreen({ route }) {
   };
 
   // Fonction : lire un morceau précis de la playlist
-  const handlePlayTrack = (track) => {
+  const handlePlayTrack = (track) => { //  track est juste un paramètre de la fonction handlePlayTrack, mais il représente un objet musique individuel
     setTrackQueue(playlist.tracks);         // Met toute la playlist en file
     playTrack(track);                       // Lance le morceau choisi
   };
@@ -49,7 +51,14 @@ export default function UserPlaylistDetailScreen({ route }) {
       <FlatList
         data={playlist.tracks}
         keyExtractor={(item) => item.trackId.toString()} // Clé unique obligatoire
-        renderItem={({ item }) => ( // Déstructuration d’un objet passé en paramètre de la fonction.
+        
+         /* -Déstructuration d’un objet passé en paramètre de la fonction.
+        -renderItem est une fonction utilisée dans FlatList, un composant React Native.
+        -item ici est chaque élément du tableau playlist.tracks.
+        -Et on passe cet item dans handlePlayTrack(item) → donc track est égal à item quand la fonction est appelée.
+
+        */
+        renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.trackItem}
             onPress={() => handlePlayTrack(item)} // Lecture du morceau cliqué
