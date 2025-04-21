@@ -10,15 +10,16 @@ import {
 
 // Liste des styles musicaux disponibles pour l’utilisateur
 // Chaque genre est lié à un terme de recherche utilisé avec l’API iTunes
-const GENRES = [
-  { label: 'Rap', term: 'drake' },
-  { label: 'Pop', term: 'taylor swift' },
-  { label: 'Classique', term: 'mozart' },
-  { label: 'Rock', term: 'nirvana' },
-  { label: 'Jazz', term: 'miles davis' },
-  { label: 'Électro', term: 'daft punk' },
-  { label: 'Reggae', term: 'bob marley' },
-  { label: 'Disco', term: 'disco' },
+
+const GENRES = [   //  Ce tableau contient donc des objets avec "clé , valeur"
+  { label: 'Rap', term: 'drake' },     //  Si je clique sur Rap, j'aurai une recherche de drake
+  { label: 'Pop', term: 'taylor swift' }, // Si je clique sur Pop, j'aurai une recherche de taylor swift
+  { label: 'Classique', term: 'mozart' }, // Si je clique sur Classique, j'aurai une recherche de mozart
+  { label: 'Rock', term: 'nirvana' }, // Si je clique sur Rock, j'aurai une recherche de nirvana
+  { label: 'Jazz', term: 'miles davis' }, // Si je clique sur Jazz, j'aurai une recherche de miles davis
+  { label: 'Électro', term: 'daft punk' }, // Si je clique sur Électro, j'aurai une recherche de daft punk
+  { label: 'Reggae', term: 'bob marley' },// Si je clique sur Reggae, j'aurai une recherche de bob marley
+  { label: 'Disco', term: 'disco' }, // Si je clique sur Disco, j'aurai une recherche de disco
 ];
 
 // Composant principal : écran de sélection de style musical
