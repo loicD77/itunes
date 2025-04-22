@@ -44,6 +44,7 @@ J'ai essayé de commenter au mieux ce projet, pour montrer que j'ai essayé de c
 ## Remarque
 
 Il était intéressant de comprendre la différence entre le JSX classique de React ressemblant étrangement à du HTML et le JSX de React Native dont les composents permmettent l'entiereté de sa constitution
+La découverte de "Audio" était intéressant, les appli de musique de streaming ont beaucoup de succés et tenter de faire la sienne avec le framework de Facebook était intriguant 
 
 
 
